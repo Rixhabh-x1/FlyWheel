@@ -1,0 +1,51 @@
+:root {
+  --bg: #070403;
+  --surface: #17100d;
+  --surface-raised: #2a170e;
+  --primary: #f97316;
+  --primary-hover: #ea580c;
+  --text: #fff7ed;
+  --muted: #c4a091;
+  --border: #46291d;
+  --blur-fonts-text: 'Space Mono', Helvetica, Arial, sans-serif;
+  font-family: var(--blur-fonts-text);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+main {
+  min-height: calc(100vh - 170px);
+}

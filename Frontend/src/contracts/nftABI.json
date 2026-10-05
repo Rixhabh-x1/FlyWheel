@@ -1,0 +1,10 @@
+[
+  "function nextTokenId() view returns (uint256)",
+  "function ownerOf(uint256 tokenId) view returns (address)",
+  "function rarity(uint256 tokenId) view returns (uint8)",
+  "function getApproved(uint256 tokenId) view returns (address)",
+  "function isApprovedForAll(address owner, address operator) view returns (bool)",
+  "function approve(address to, uint256 tokenId)",
+  "function fuse(uint256 tokenId1, uint256 tokenId2)",
+  "function mint() payable"
+]

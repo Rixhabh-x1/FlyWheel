@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+
+  & span,
+  & strong,
+  & small {
+    display: block;
+  }
+
+  & span,
+  & small {
+    color: var(--muted);
+    font-size: 11px;
+  }
+
+  & strong {
+    margin: 4px 0;
+    font-size: 21px;
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  color: white;
+  background: var(--primary);
+  font-weight: bold;
+}

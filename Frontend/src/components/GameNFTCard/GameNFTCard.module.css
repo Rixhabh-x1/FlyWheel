@@ -1,0 +1,46 @@
+.card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+
+  & img {
+         width: 350px;
+        height: 350px;
+        display: flex;
+        object-fit: contain;
+  }
+}
+
+.selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.25);
+}
+
+.info {
+  padding: 16px;
+
+  & > span {
+    color: var(--muted);
+    font-size: 11px;
+  }
+
+  & h3 {
+    margin: 6px 0 12px;
+  }
+
+  & p {
+    margin: 5px 0;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  & b {
+    color: #fdba74;
+  }
+
+  & button {
+    width: 100%;
+    margin-top: 12px;
+  }
+}

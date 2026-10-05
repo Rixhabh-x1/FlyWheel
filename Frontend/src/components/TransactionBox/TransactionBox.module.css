@@ -1,0 +1,29 @@
+.box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+  background: var(--surface);
+
+  & strong {
+    color: #fdba74;
+  }
+
+  & p {
+    margin: 6px 0;
+    color: var(--muted);
+  }
+
+  & a {
+    color: white;
+    font-size: 13px;
+  }
+}
+
+.failed {
+  border-color: #ef4444;
+
+  & strong {
+    color: #f87171;
+  }
+}

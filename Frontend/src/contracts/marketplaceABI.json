@@ -1,0 +1,8 @@
+[
+  "function listings(uint256 tokenId) view returns (address seller, uint256 price)",
+  "function listNFT(uint256 tokenId, uint256 price)",
+  "function buyNFT(uint256 tokenId)",
+  "function cancel(uint256 tokenId)",
+  "function feePercent() view returns (uint256)",
+  "function treasury() view returns (address)"
+]
