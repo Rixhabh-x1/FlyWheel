@@ -9,7 +9,7 @@ export const Hero=()=>{
   <div className={styles.copy}>
    <h1>Collect. Fuse.<br/>Stake. <em>Earn.</em></h1>
    <p>Enter an evolving NFT economy where every collectible can become stronger, generate rewards, and fuel your next move.</p>
-   <div className={styles.buttons}><Link className={styles.mainButton} to="">Mint NFT</Link><Link className={styles.secondButton} to="">Explore marketplace</Link></div>
+   <div className={styles.buttons}><Link className={styles.mainButton} to="/my-nfts">Mint NFT</Link><Link className={styles.secondButton} to="/marketplace">Explore marketplace</Link></div>
   </div>
   <div className={styles.art}><div className={styles.card}>
    <img src={nftimg} alt="FLYChain NFT"/>
