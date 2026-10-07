@@ -52,10 +52,18 @@ export function WalletProvider({ children }) {
     const ethereum = getEthereumProvider()
     setError('')
 
-    if (!ethereum) {
-      setError('MetaMask was not detected. Install MetaMask to continue.')
-      return
-    }
+   if (!ethereum) {
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+
+  if (isMobile) {
+    const dappUrl = window.location.href.replace(/^https?:\/\//, '')
+    window.location.href = `https://metamask.app.link/dapp/${dappUrl}`
+    return
+  }
+
+  setError('MetaMask was not detected. Install MetaMask to continue.')
+  return
+}
 
     try {
       setIsConnecting(true)
