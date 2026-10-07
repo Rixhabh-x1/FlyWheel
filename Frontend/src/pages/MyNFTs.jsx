@@ -7,6 +7,7 @@ import { CONTRACT_ADDRESSES } from '../config/contracts'
 import nftABI from '../contracts/nftABI.json'
 import { getEthereumProvider } from '../utils/blockchain'
 import mintPreview from '../assets/nfts/nftimg1.png'
+import { getNftImage } from '../data/nftDisplay'
 
 function MyNFTs() {
   const wallet = useWallet()
@@ -146,7 +147,7 @@ async function mintNFT() {
           <div className="nft-grid">
             {nfts.map((nft) => (
               <article className="nft-card" key={nft.tokenId}>
-                <img src={mintPreview} alt={`Flywheel NFT #${nft.tokenId}`} />
+                <img src={getNftImage(nft.rarity)} alt={`Flywheel NFT #${nft.tokenId}`} />
                 <h3>Flywheel NFT #{nft.tokenId}</h3>
                 <p>{rarityName(nft.rarity)}</p>
               </article>
