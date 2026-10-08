@@ -5,10 +5,10 @@
   background: var(--surface);
 
   & img {
-         width: 350px;
-        height: 350px;
-        display: flex;
-        object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
 }
 

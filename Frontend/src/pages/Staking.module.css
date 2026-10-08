@@ -1,10 +1,43 @@
+.header {
+  flex-wrap: wrap;
+}
+
+.rateCard {
+  width: 593px;
+  height: 76px;
+  max-width: 100%;
+  padding: 17px;
+ border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+
+  
+
+  & h2 {
+    margin: 0 0 5px;
+    color: #ffffff;
+    font-size: 15px;
+        font-weight: normal;
+
+  }
+
+  & p {
+     display: inline-block;
+  color: #fdba74;
+  font-size: 13px;
+  line-height: 1.5;
+    font-weight: bolder;  
+    margin: 0 40px 0 0;
+  }
+}
+
 .rewardNote {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-top: 25px;
   padding: 17px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
 
@@ -51,6 +84,16 @@
 }
 
 @media (max-width: 768px) {
+  .rateCard {
+    width: 100%;
+    height: auto;
+
+    & p {
+      display: block;
+      margin: 20px 0;
+    }
+  }
+
   .rewardNote {
     flex-direction: column;
   }

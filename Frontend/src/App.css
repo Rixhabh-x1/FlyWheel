@@ -44,11 +44,12 @@
     font-size: 48px;
   }
 
-  & p {
+ & > div:first-child > p {
     max-width: 600px;
     margin: 0;
     color: var(--muted);
     line-height: 1.5;
+
   }
 }
 
@@ -62,6 +63,8 @@
 }
 
 .page-header__badge {
+  width: 163px;
+  height: 76px;
   padding: 12px;
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -95,11 +98,10 @@
   background: var(--surface);
 
   & > img {
-    
-            width: 350px;
-        height: 350px;
-        display: flex;
-        object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
 
   & h3 {
