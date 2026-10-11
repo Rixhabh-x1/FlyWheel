@@ -258,8 +258,6 @@
 
   .page-header__badge {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
   }
 
   .mint-panel {
